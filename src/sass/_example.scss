@@ -46,6 +46,7 @@ a {
 	animation: gradient 15s ease infinite;
 	min-height: 100vh;
     height: 100%;
+    padding-top: 127px;
 } 
 
 @keyframes gradient {
@@ -67,6 +68,7 @@ a {
 
   margin-left: auto;
   margin-right: auto;
+
 
   flex-direction: column;
   border-radius: 18px;
@@ -134,3 +136,28 @@ input:not(:first-child) {
 // .bgCss {
 //     display: none;
 // } 
+
+
+#scrollup {
+  position: fixed;
+  z-index: 99999;
+  bottom: 200px;
+  right: 20px;
+  font-size: 40px;
+  color: var(--accent-color);
+  cursor: pointer;
+  animation: pulsing 5s infinite;
+
+  @media screen and (min-width: 768px) {
+    right: 60px;
+  }
+}
+
+.isshowbtn {
+  opacity: 1;
+  transition: 0.7s;
+
+  &__hide {
+    opacity: 0;
+  }
+}
