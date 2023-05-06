@@ -17,28 +17,20 @@
 
 // scrol
 window.onload = () => {
-    window.onscroll = function (e) {
-        let winy = window.scrolly;
-        // if (winy > 1) {
-        //     // progressbar();
-
-        //     // scrollbaranimation();
-
-        //     // winy = null;
-        // }
-    };
-
     const scrolbtn = document.querySelector('.isshowbtn');
+    
     window.onscroll = () => {
-        if (window.scrollY > 1) {
+        if (window.scrollY > 500) {
             scrolbtn.classList.remove('isshowbtn__hide')
-        } else if (window.scrollY < 1) {
+        } else if (window.scrollY < 500) {
             scrolbtn.classList.add('isshowbtn__hide')
         }
     };
 
-    scrolbtn.onclick = () => {
-        window.scrollTo(0, 0);
+    scrolbtn.onclick = (evt) => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     };
-
 }
