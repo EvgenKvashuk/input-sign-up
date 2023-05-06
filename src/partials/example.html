@@ -1,15 +1,22 @@
-<div class="bgCss">
+<button class="button primary" data-modal-open>OPEN</button>
 
-  <div class="wrap">
-    <button class="cls"></button>
-  
+
+
+<div class="bacckdrop is-hidden" data-modal>
+
+  <div class="wrap_modal_sign">
+
+    <button class="close-modal" data-modal-close>
+      <i class="fa-solid fa-xmark fa-fade fa-xl" style="color: #ff0000;"></i>
+    </button>
+
     <form action="submit" class="form_sign">
       <input placeholder="NAME" class="name input" type="text">
-  
-      <input placeholder="EMAIL" class="email" type="email" name="email" autofocus  />
-  
+
+      <input placeholder="EMAIL" class="email input" type="email" name="email"  />
+
       <input placeholder="PASSWORD" class="pass input" type="password" name="password" id="">
-  
+
       <button>Sign up</button>
     </form>
     <ul class="list sign_list">
@@ -21,5 +28,5 @@
 </div>
 
 <div id="scrollup" class="isshowbtn isshowbtn__hide">
-  <i class="fa-sharp fa-solid fa-arrow-up"></i>
+  <i class="fa-solid fa-chevron-up"></i>
 </div>
