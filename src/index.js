@@ -2,9 +2,9 @@
 
 (() => {
     const refs = {
-        openModalBtn: document.querySelector("[data-modal-open]"),
-        closeModalBtn: document.querySelector("[data-modal-close]"),
-        modal: document.querySelector("[data-modal]"),
+        openModalBtn: document.querySelector("[data-modal-open-sign]"),
+        closeModalBtn: document.querySelector("[data-modal-close-sign]"),
+        modal: document.querySelector("[data-modal-sign]"),
     };
 
     refs.openModalBtn.addEventListener("click", toggleModal);
@@ -18,7 +18,7 @@
 // scrol
 window.onload = () => {
     const scrolbtn = document.querySelector('.isshowbtn');
-    
+
     window.onscroll = () => {
         if (window.scrollY > 500) {
             scrolbtn.classList.remove('isshowbtn__hide')
