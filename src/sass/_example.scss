@@ -1,40 +1,40 @@
-// *,
-// *::before,
-// *::after {
-//   -webkit-box-sizing: border-box;
-//   box-sizing: border-box;
-// }
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// p {
-//   margin-top: 0;
-//   margin-bottom: 0;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-// ul,
-// ol {
-//   margin-top: 0;
-//   margin-bottom: 0;
-//   padding-left: 0;
-// }
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 
-// img {
-//   display: block;
-// }
+img {
+  display: block;
+}
 
-// a {
-//   font-style: normal;
-//   text-decoration: none;
-// }
+a {
+  font-style: normal;
+  text-decoration: none;
+}
 
-// .list {
-//   list-style: none;
-// }
+.list {
+  list-style: none;
+}
 
 
 
@@ -261,22 +261,79 @@
 
 
 
-.conteiner {
-  display: flex;
-flex-direction: column;
-gap: 10px;
+// .conteiner {
+//   display: flex;
+// flex-direction: column;
+// gap: 10px;
+// }
+
+// p {
+//   display: inline;
+//   margin-top: 60px;
+//   margin-right: 60px;
+// }
+
+// .item {
+//     margin-top: 10px;
+// }
+
+// .is-hiden {
+//   display: none
+// }
+
+// html.dark body {
+//     color: #fff;
+//     background-color: #111;
+// }
+
+// html.light body {
+//     color: #111;
+//     background-color: #fff;
+// }
+
+
+
+
+
+
+.book-title {
+  width: 114px;
+  height: 18px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #111111;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-p {
-  display: inline;
-  margin-top: 60px;
-  margin-right: 60px;
+.author-name {
+  width: 71px;
+  height: 14px;
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #B4AFAF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.item {
-    margin-top: 10px;
+
+.book-title.dark  {
+  background-color: #111;
+  color: #B4AFAF;
 }
 
-.is-hiden {
-  display: none
+.author-name.dark  {
+  background-color: #111;
+  color: #B4AFAF;
 }
